@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.7616569941965179" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.PCHomeSceneController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="732.0">
+         <children>
+            <Label fx:id="PCname" layoutX="-1.0" layoutY="57.0" prefHeight="31.0" prefWidth="758.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="140.0" text="Movie LIst">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TableView fx:id="table" layoutX="4.0" layoutY="163.0" prefHeight="335.0" prefWidth="747.0">
+              <columns>
+                <TableColumn fx:id="titleCol" prefWidth="152.19997262954712" text="Movie Title" />
+                <TableColumn fx:id="releaseYearCol" minWidth="9.399993896484375" prefWidth="74.39999389648438" text="Release Year" />
+                  <TableColumn fx:id="genre1Col" minWidth="0.0" prefWidth="82.20002746582031" text="Genre" />
+                  <TableColumn fx:id="genre2Col" prefWidth="82.5999755859375" />
+                  <TableColumn fx:id="genre3Col" prefWidth="97.20001220703125" />
+                  <TableColumn fx:id="runningTimeCol" prefWidth="93.79998779296875" text="Running Time" />
+                  <TableColumn fx:id="budgetCol" prefWidth="80.20001220703125" text="Budget" />
+                  <TableColumn fx:id="revenueCol" prefWidth="84.5999755859375" text="Revenue" />
+              </columns>
+            </TableView>
+            <Button layoutX="650.0" layoutY="123.0" mnemonicParsing="false" onAction="#viewProfileClick" text="View Profile" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="172.0">
+         <children>
+            <Label layoutX="54.0" layoutY="24.0" text="Search Options" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="55.0" layoutY="72.0" mnemonicParsing="false" onAction="#onRecentClick" text="Most Recent Movies" />
+            <Button layoutX="38.0" layoutY="108.0" mnemonicParsing="false" onAction="#onMaxRevenueClick" text="Maximum Revenue Movie" />
+            <Separator layoutX="5.0" layoutY="189.0" prefHeight="18.0" prefWidth="222.0" />
+            <Button layoutX="69.0" layoutY="242.0" mnemonicParsing="false" onAction="#onTransferClick" text="Transfer Movie" />
+            <Separator layoutX="5.0" layoutY="297.0" prefHeight="18.0" prefWidth="222.0" />
+            <Button layoutX="97.0" layoutY="432.0" mnemonicParsing="false" onAction="#onExitClick" text="Exit" />
+            <Button layoutX="78.0" layoutY="338.0" mnemonicParsing="false" onAction="#onAddMovieClick" text="Add Movie" />
+            <Separator layoutX="5.0" layoutY="392.0" prefHeight="22.0" prefWidth="222.0" />
+            <Button layoutX="79.0" layoutY="146.0" mnemonicParsing="false" onAction="#onAllMoviesClick" text="All Movies" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
